@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #333;
+  line-height: 1.2;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+/*REUSABLE*/
+.container {
+  width: 80%;
+  margin: 32px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10px, 1fr));
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+/* HEADER*/
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  align-items: center;
+  color: #f44336;
+}
+.map-icon {
+  height: 18px;
+  fill: #f44336;
+}
+.nav-icon {
+  height: 24px;
+  filter: contrast(20%);
+}
+
+.section-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 100%;
+  background-image: url(projeto_estagio/imagens/london.jpg);
+  background-size: cover;
+}
+
+.main-box-hero {
+  width: 900px;
+  background-color: #fff;
+}
+
+.inner-upper-box-hero {
+  display: flex;
+  justify-content: space-evenly;
+}
+.box-icon {
+  display: flex;
+  gap: 14px;
+  background-color: black;
+  width: 100%;
+  color: #eee;
+  justify-content: center;
+  padding: 10px;
+}
+.box-icon svg {
+  height: 16px;
+  fill: #eee;
+}
+.box-icon--red {
+  background-color: #f44336;
+}
+
+.inner-bottom-box-hero {
+  padding: 32px 18px;
+  color: #444;
+}
+.inner-bottom-box-hero h2 {
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.hero-btn {
+  display: block;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #eee;
+  background-color: #666;
+  border: none;
+  margin-top: 18px;
+}
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #888;
+  color: #fff;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.input-container input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 4px;
+  color: #bbb;
+  border: 1px solid #ddd;
+}
+
+.input-container input:focus {
+  outline: 2px solid #f4433688;
+}
+
+.img-text {
+  position: relative;
+}
+.img-text img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.first .img-text p {
+  color: #eee;
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+  font-weight: 500;
+}
+
+.box-img {
+  margin-top: 10px;
+}
+h2 {
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.img-text-box {
+  background-color: #fff;
+  padding: 14px 16px 24px;
+}
+.img-text-box p:nth-child(2) {
+  color: #888;
+  margin-bottom: 18px;
+}
+.img-text-box p:last-child {
+  padding: 30px 16px 0;
+}
+
+.subscribe h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.subscribe {
+  background-color: #555;
+  padding: 32px 16px 16px;
+  color: #eee;
+  font-weight: 500;
+  font-size: 14px;
+}
+.subscribe p {
+  margin-bottom: 18px;
+}
+
+.subscribe input {
+  width: 100%;
+  color: #aaa;
+  padding: 8px;
+  font-size: 14px;
+  margin: 2px 0 14px;
+  border: none;
+}
+.subscribe input:focus {
+  outline: 2px solid #fc685ee1;
+  font-family: inherit;
+}
+
+.btn-subscribe {
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #f44336;
+  color: #eee;
+  border: none;
+  font-weight: 600;
+}
+.btn-subscribe:hover,
+.btn-subscribe:active {
+  background-color: #fc594e;
+  color: #fff;
+}
+
+.footer-input {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 14px;
+}
+footer h2 {
+  font-size: 30px;
+}
+footer li {
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+}
+address {
+  font-style: normal;
+}
+li svg {
+  height: 14px;
+  width: 14px;
+}
+.container-li-footer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.paragraph {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+footer input {
+  padding: 16px 8px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #888;
+  border: 1px solid #bbb;
+}
+
+.btn-footer {
+  font-size: 14px;
+  padding: 14px 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #eee;
+  background-color: #000;
+  border: none;
+  margin-top: 16px;
+  font-family: inherit;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  color: #888;
+}
+.social-media h2 {
+  font-size: 18px;
+}
+
+.icons-social-media svg {
+  height: 24px;
+  width: 24px;
+  filter: contrast(20%);
+  margin-bottom: 16px;
+}
+footer a {
+  color: #888;
+}
+/* usar min-max:  grid-template-columns: repeat(3, minmax(10px, 1fr));
+*/
