@@ -288,5 +288,6 @@ footer input {
 footer a {
   color: #888;
 }
+
 /* usar min-max:  grid-template-columns: repeat(3, minmax(10px, 1fr));
 */
